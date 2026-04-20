@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Core\" />
+    <Folder Include="Entities\Base\" />
+    <Folder Include="Entities\Creatures\" />
+    <Folder Include="Entities\Objects\" />
+    <Folder Include="Items\AttackItems\Decorators\" />
+    <Folder Include="Items\Base\" />
+    <Folder Include="Patterns\Strategy\" />
+    <Folder Include="Patterns\Observer\" />
+    <Folder Include="Utilities\" />
+  </ItemGroup>
+
+</Project>
