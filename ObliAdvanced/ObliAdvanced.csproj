@@ -5,6 +5,13 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    
+    <PackageId>AndreasE.ObliAdvanced</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Andreas Egelund</Authors>
+    <Description>Obligatorisk opgave - Advanced Software Construction</Description>
+    <RepositoryUrl>https://github.com/Andreas-Egelund/ObliAdvanced</RepositoryUrl>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
