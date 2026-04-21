@@ -10,6 +10,8 @@ namespace ObliAdvanced.Patterns.Observer
             MyLogger.Instance.Log($"Observer: {creature.Name} took {damage} damage, HP: {creature.HitPoint}");
         }
 
+
+
         public void OnCreatureDeath(Creature creature)
         {
             MyLogger.Instance.Log($"Observer: {creature.Name} has fallen in battle!");

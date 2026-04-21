@@ -16,14 +16,15 @@ class Program
         var consoleListener = new ConsoleTraceListener();
         MyLogger.Instance.AddListener(consoleListener);
 
-
+        /*
         ConfigurationManager config = new ConfigurationManager();
 
         config.LoadConfiguration("config.xml");
 
+    */
 
         // Create world
-        var world = new World(config.MaxY, config.MaxX);
+        var world = new World(20, 20);
 
         // Create creatures
         var warrior = new Warrior("Conan", new Position(1, 1));
