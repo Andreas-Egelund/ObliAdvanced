@@ -4,8 +4,10 @@ using ObliAdvanced.Core;
 using ObliAdvanced.Entities.Creatures;
 using ObliAdvanced.Entities.Objects;
 using ObliAdvanced.Items.AttackItems;
+using ObliAdvanced.Items.AttackItems.Decorators;
 using ObliAdvanced.Items.Base;
 using ObliAdvanced.Patterns.Observer;
+using ObliAdvanced.Patterns.Strategy;
 using ObliAdvanced.Utilities;
 
 class Program
@@ -21,7 +23,7 @@ class Program
 
         config.LoadConfiguration("config.xml");
 
-    */
+        */
 
         // Create world
         var world = new World(20, 20);
@@ -52,7 +54,7 @@ class Program
         // Simulate attack
         int damage = warrior.Hit();
         mage.ReceiveHit(damage);
-
+        
         // Simulate looting
         warrior.Loot(chest);
 

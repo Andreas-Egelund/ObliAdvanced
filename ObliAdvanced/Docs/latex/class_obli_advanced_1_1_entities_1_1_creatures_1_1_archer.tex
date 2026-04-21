@@ -1,0 +1,77 @@
+\doxysection{Obli\+Advanced.\+Entities.\+Creatures.\+Archer Class Reference}
+\hypertarget{class_obli_advanced_1_1_entities_1_1_creatures_1_1_archer}{}\label{class_obli_advanced_1_1_entities_1_1_creatures_1_1_archer}\index{ObliAdvanced.Entities.Creatures.Archer@{ObliAdvanced.Entities.Creatures.Archer}}
+Inheritance diagram for Obli\+Advanced.\+Entities.\+Creatures.\+Archer:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_obli_advanced_1_1_entities_1_1_creatures_1_1_archer}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_obli_advanced_1_1_entities_1_1_creatures_1_1_archer_a9d7723fb1774df17579e143b4b21525b}\label{class_obli_advanced_1_1_entities_1_1_creatures_1_1_archer_a9d7723fb1774df17579e143b4b21525b} 
+{\bfseries Archer} (string name, \doxymbox{\hyperlink{class_obli_advanced_1_1_entities_1_1_base_1_1_world_object_a290dbf3e066c85a9fa866b80b20772e9}{Position}} position)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{class_obli_advanced_1_1_entities_1_1_base_1_1_creature}{Obli\+Advanced.\+Entities.\+Base.\+Creature}}}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Add\+Observer} (\doxymbox{\hyperlink{interface_obli_advanced_1_1_patterns_1_1_observer_1_1_i_creature_observer}{ICreature\+Observer}} observer)
+\item 
+void {\bfseries Remove\+Observer} (\doxymbox{\hyperlink{interface_obli_advanced_1_1_patterns_1_1_observer_1_1_i_creature_observer}{ICreature\+Observer}} observer)
+\item 
+int {\bfseries Hit} ()
+\item 
+virtual void {\bfseries Receive\+Hit} (int hit)
+\item 
+virtual void {\bfseries Loot} (World\+Object world\+Object)
+\item 
+void {\bfseries Add\+Attack\+Item} (\doxymbox{\hyperlink{class_obli_advanced_1_1_items_1_1_base_1_1_attack_item}{Attack\+Item}} item)
+\item 
+void {\bfseries Add\+Defence\+Item} (\doxymbox{\hyperlink{class_obli_advanced_1_1_items_1_1_base_1_1_defence_item}{Defence\+Item}} item)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_obli_advanced_1_1_entities_1_1_creatures_1_1_archer_adc70c9d5d954b74e1d8e7e84fe53d589}\label{class_obli_advanced_1_1_entities_1_1_creatures_1_1_archer_adc70c9d5d954b74e1d8e7e84fe53d589} 
+override int {\bfseries Calculate\+Base\+Damage} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \doxymbox{\hyperlink{class_obli_advanced_1_1_entities_1_1_base_1_1_creature}{Obli\+Advanced.\+Entities.\+Base.\+Creature}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Creature} (string name, int hit\+Point, \doxymbox{\hyperlink{class_obli_advanced_1_1_entities_1_1_base_1_1_world_object_a290dbf3e066c85a9fa866b80b20772e9}{Position}} position)
+\item 
+void {\bfseries Notify\+Hit} (int damage)
+\item 
+void {\bfseries Notify\+Death} ()
+\item 
+int {\bfseries Calculate\+Base\+Damage} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \doxymbox{\hyperlink{class_obli_advanced_1_1_entities_1_1_base_1_1_world_object}{Obli\+Advanced.\+Entities.\+Base.\+World\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries World\+Object} (string name, bool lootable, bool removeable, \doxymbox{\hyperlink{class_obli_advanced_1_1_entities_1_1_base_1_1_world_object_a290dbf3e066c85a9fa866b80b20772e9}{Position}} position)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Properties inherited from \doxymbox{\hyperlink{class_obli_advanced_1_1_entities_1_1_base_1_1_creature}{Obli\+Advanced.\+Entities.\+Base.\+Creature}}}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries Hit\+Point}\hspace{0.3cm}{\ttfamily  \+[get, protected set]\+}
+\item 
+\doxymbox{\hyperlink{interface_obli_advanced_1_1_patterns_1_1_strategy_1_1_i_attack_strategy}{IAttack\+Strategy}} {\bfseries Attack\+Strategy}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \doxymbox{\hyperlink{class_obli_advanced_1_1_entities_1_1_base_1_1_world_object}{Obli\+Advanced.\+Entities.\+Base.\+World\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+string {\bfseries Name}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\begin{DoxyCompactList}\small\item\em Name of the world object. \end{DoxyCompactList}\item 
+bool {\bfseries Lootable}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\begin{DoxyCompactList}\small\item\em Whether the object can be looted by creatures. \end{DoxyCompactList}\item 
+bool {\bfseries Removeable}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\begin{DoxyCompactList}\small\item\em Whether the object can be removed from the world. \end{DoxyCompactList}\item 
+Position {\bfseries Position}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\begin{DoxyCompactList}\small\item\em Position of the object in the world. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+C:\+/\+\+Users/\+andre/\+source/\+repos/\+\+Obli\+Advanced/\+\+Obli\+Advanced/\+\+Entities/\+\+Creatures/\+Archer.\+cs\end{DoxyCompactItemize}

@@ -89,7 +89,6 @@ namespace ObliAdvanced.Entities.Base
             if (worldObject.Lootable)
             {
                 MyLogger.Instance.Log($"{Name} looted {worldObject.Name}");
-                // Implementation for specific loot types would go here
             }
         }
 

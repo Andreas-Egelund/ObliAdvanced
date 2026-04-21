@@ -1,0 +1,85 @@
+\doxysection{Obli\+Advanced.\+Entities.\+Base.\+Creature Class Reference}
+\hypertarget{class_obli_advanced_1_1_entities_1_1_base_1_1_creature}{}\label{class_obli_advanced_1_1_entities_1_1_base_1_1_creature}\index{ObliAdvanced.Entities.Base.Creature@{ObliAdvanced.Entities.Base.Creature}}
+
+
+Abstract base class for all creatures implementing template method pattern.  
+
+
+Inheritance diagram for Obli\+Advanced.\+Entities.\+Base.\+Creature:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.222222cm]{class_obli_advanced_1_1_entities_1_1_base_1_1_creature}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_obli_advanced_1_1_entities_1_1_base_1_1_creature_af410594e9766722f0c507a7c0d688175}\label{class_obli_advanced_1_1_entities_1_1_base_1_1_creature_af410594e9766722f0c507a7c0d688175} 
+void {\bfseries Add\+Observer} (\doxymbox{\hyperlink{interface_obli_advanced_1_1_patterns_1_1_observer_1_1_i_creature_observer}{ICreature\+Observer}} observer)
+\item 
+\Hypertarget{class_obli_advanced_1_1_entities_1_1_base_1_1_creature_ac46aa87a2b69878d6f0bf2b879bccc55}\label{class_obli_advanced_1_1_entities_1_1_base_1_1_creature_ac46aa87a2b69878d6f0bf2b879bccc55} 
+void {\bfseries Remove\+Observer} (\doxymbox{\hyperlink{interface_obli_advanced_1_1_patterns_1_1_observer_1_1_i_creature_observer}{ICreature\+Observer}} observer)
+\item 
+\Hypertarget{class_obli_advanced_1_1_entities_1_1_base_1_1_creature_aaa48f64a623946cbc61a4af71a10df5c}\label{class_obli_advanced_1_1_entities_1_1_base_1_1_creature_aaa48f64a623946cbc61a4af71a10df5c} 
+int {\bfseries Hit} ()
+\item 
+\Hypertarget{class_obli_advanced_1_1_entities_1_1_base_1_1_creature_a36a0f83f5815113cc340d179ed7c7f16}\label{class_obli_advanced_1_1_entities_1_1_base_1_1_creature_a36a0f83f5815113cc340d179ed7c7f16} 
+virtual void {\bfseries Receive\+Hit} (int hit)
+\item 
+\Hypertarget{class_obli_advanced_1_1_entities_1_1_base_1_1_creature_a3be7365b1a30e92bba7340a8d8326d1f}\label{class_obli_advanced_1_1_entities_1_1_base_1_1_creature_a3be7365b1a30e92bba7340a8d8326d1f} 
+virtual void {\bfseries Loot} (World\+Object world\+Object)
+\item 
+\Hypertarget{class_obli_advanced_1_1_entities_1_1_base_1_1_creature_a19c835ddfb833ce71e7c5e04bcd6ec6b}\label{class_obli_advanced_1_1_entities_1_1_base_1_1_creature_a19c835ddfb833ce71e7c5e04bcd6ec6b} 
+void {\bfseries Add\+Attack\+Item} (\doxymbox{\hyperlink{class_obli_advanced_1_1_items_1_1_base_1_1_attack_item}{Attack\+Item}} item)
+\item 
+\Hypertarget{class_obli_advanced_1_1_entities_1_1_base_1_1_creature_a7bf64ce356071974f21358ac1f7a334e}\label{class_obli_advanced_1_1_entities_1_1_base_1_1_creature_a7bf64ce356071974f21358ac1f7a334e} 
+void {\bfseries Add\+Defence\+Item} (\doxymbox{\hyperlink{class_obli_advanced_1_1_items_1_1_base_1_1_defence_item}{Defence\+Item}} item)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_obli_advanced_1_1_entities_1_1_base_1_1_creature_a3aa9243567bbbaf20676bf18024cd8a1}\label{class_obli_advanced_1_1_entities_1_1_base_1_1_creature_a3aa9243567bbbaf20676bf18024cd8a1} 
+{\bfseries Creature} (string name, int hit\+Point, \doxymbox{\hyperlink{class_obli_advanced_1_1_entities_1_1_base_1_1_world_object_a290dbf3e066c85a9fa866b80b20772e9}{Position}} position)
+\item 
+\Hypertarget{class_obli_advanced_1_1_entities_1_1_base_1_1_creature_af0e94a2816ccce7522268b6fbd5c1292}\label{class_obli_advanced_1_1_entities_1_1_base_1_1_creature_af0e94a2816ccce7522268b6fbd5c1292} 
+void {\bfseries Notify\+Hit} (int damage)
+\item 
+\Hypertarget{class_obli_advanced_1_1_entities_1_1_base_1_1_creature_af1654df41d5f00ea0908c4fa1f271b10}\label{class_obli_advanced_1_1_entities_1_1_base_1_1_creature_af1654df41d5f00ea0908c4fa1f271b10} 
+void {\bfseries Notify\+Death} ()
+\item 
+\Hypertarget{class_obli_advanced_1_1_entities_1_1_base_1_1_creature_a8d1070cd71e78d92ff8d439a13383cdb}\label{class_obli_advanced_1_1_entities_1_1_base_1_1_creature_a8d1070cd71e78d92ff8d439a13383cdb} 
+int {\bfseries Calculate\+Base\+Damage} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \doxymbox{\hyperlink{class_obli_advanced_1_1_entities_1_1_base_1_1_world_object}{Obli\+Advanced.\+Entities.\+Base.\+World\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries World\+Object} (string name, bool lootable, bool removeable, \doxymbox{\hyperlink{class_obli_advanced_1_1_entities_1_1_base_1_1_world_object_a290dbf3e066c85a9fa866b80b20772e9}{Position}} position)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_obli_advanced_1_1_entities_1_1_base_1_1_creature_a01ffa9ae1d0e9a31c4a9804299abf6a7}\label{class_obli_advanced_1_1_entities_1_1_base_1_1_creature_a01ffa9ae1d0e9a31c4a9804299abf6a7} 
+int {\bfseries Hit\+Point}\hspace{0.3cm}{\ttfamily  \+[get, protected set]\+}
+\item 
+\Hypertarget{class_obli_advanced_1_1_entities_1_1_base_1_1_creature_a947f67b2903814ba5e62743e89fbee68}\label{class_obli_advanced_1_1_entities_1_1_base_1_1_creature_a947f67b2903814ba5e62743e89fbee68} 
+\doxymbox{\hyperlink{interface_obli_advanced_1_1_patterns_1_1_strategy_1_1_i_attack_strategy}{IAttack\+Strategy}} {\bfseries Attack\+Strategy}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \doxymbox{\hyperlink{class_obli_advanced_1_1_entities_1_1_base_1_1_world_object}{Obli\+Advanced.\+Entities.\+Base.\+World\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+string {\bfseries Name}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\begin{DoxyCompactList}\small\item\em Name of the world object. \end{DoxyCompactList}\item 
+bool {\bfseries Lootable}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\begin{DoxyCompactList}\small\item\em Whether the object can be looted by creatures. \end{DoxyCompactList}\item 
+bool {\bfseries Removeable}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\begin{DoxyCompactList}\small\item\em Whether the object can be removed from the world. \end{DoxyCompactList}\item 
+Position {\bfseries Position}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\begin{DoxyCompactList}\small\item\em Position of the object in the world. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract base class for all creatures implementing template method pattern. 
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+C:\+/\+\+Users/\+andre/\+source/\+repos/\+\+Obli\+Advanced/\+\+Obli\+Advanced/\+\+Entities/\+\+Base/\+abstract\+\_\+\+Creature.\+cs\end{DoxyCompactItemize}

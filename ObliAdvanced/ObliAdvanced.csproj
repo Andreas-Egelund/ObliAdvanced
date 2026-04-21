@@ -14,6 +14,7 @@
     <Folder Include="Entities\Objects\" />
     <Folder Include="Items\AttackItems\Decorators\" />
     <Folder Include="Items\Base\" />
+    <Folder Include="Docs\" />
     <Folder Include="Patterns\Strategy\" />
     <Folder Include="Patterns\Observer\" />
     <Folder Include="Utilities\" />
